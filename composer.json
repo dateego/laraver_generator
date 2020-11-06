@@ -1,0 +1,30 @@
+{
+    "name": "dateego/laravel-generator",
+    "description": "generate resources, migrations, models, and much more.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "dateego",
+            "email": "zhangyuan@aidatian.cn"
+        }
+    ],
+    "require": {
+        "php": "^7.3|^8.0",
+        "illuminate/database": "^8.0"
+    },
+
+    "require-dev": {
+        "orchestra/testbench": "^6.3"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Dateego\\Generators\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Dateego\\Generators\\Tests\\": "tests/"
+        }
+    }
+}
