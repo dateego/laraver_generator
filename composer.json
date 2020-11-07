@@ -1,7 +1,5 @@
 {
     "name": "dateego/laravel-generator",
-    "type": "library",
-    "minimum-stability": "dev",
     "description": "generate resources, migrations, models, and much more.",
     "license": "MIT",
     "authors": [
