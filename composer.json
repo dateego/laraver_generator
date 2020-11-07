@@ -1,5 +1,7 @@
 {
     "name": "dateego/laravel-generator",
+    "type": "library",
+    "minimum-stability": "dev",
     "description": "generate resources, migrations, models, and much more.",
     "license": "MIT",
     "authors": [
@@ -10,7 +12,8 @@
     ],
     "require": {
         "php": "^7.3|^8.0",
-        "illuminate/database": "^8.0"
+        "illuminate/database": "^8.0",
+        "doctrine/dbal": "^2.12"
     },
 
     "require-dev": {
@@ -25,6 +28,13 @@
     "autoload-dev": {
         "psr-4": {
             "Dateego\\Generators\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Dateego\\Generators\\GeneratorsServiceProvider"
+            ]
         }
     }
 }
